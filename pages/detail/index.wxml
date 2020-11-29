@@ -1,0 +1,42 @@
+<view class="wrap">
+  <view class="main_wrap">
+    <view class="content">
+      <view class="content_top">
+        <image mode="widthFix" class="top_left" src="{{Info.avatarUrl}}"></image>
+        <view class="top_right">
+          <view class="name_time">
+            <view class="nick">{{Info.nickName}}</view>
+            <view class="time">{{'刚刚'}}</view>
+          </view>
+          <view class="iconfont icon-moreread"></view>
+        </view>
+      </view>
+      <view class="content_bottom">
+        <view class="info">
+          <view class="title" wx:if="{{Info.title}}">{{Info.title}}</view>
+          <view wx:if="{{Info.name}}" class="name">物品名: {{Info.name}}</view>
+          <view wx:if="{{Info.place}}" class="place">地点: {{Info.place}}</view>
+          <view wx:if="{{Info.type}}" class="type">类型: {{Info.type}}</view>
+          <view wx:if="{{Info.phone}}" class="phone">联系方式: {{Info.phone}}</view>
+          <view wx:if="{{Info.describe}}" class="describe">描述: {{Info.describe}}</view>
+        </view>
+        <view class="imgs">
+          <image class='img' bindtap="handleImg" mode="widthFix" src="{{Info.images[0]}}"></image>
+        </view>
+      </view>
+    </view>
+    <ul class="comments_wrap">
+      <li class="comments_title">留言</li>
+      <li wx:for="{{Info.comments}}" wx:key="index">
+        <comment-list comment="{{item}}"></comment-list>
+      </li>
+    </ul>
+  </view>
+</view>
+<view class="add_message">
+  <view class="ipt_wrap">
+    <view class="left ipt_left">{{'留言'}}</view>
+    <input class="ipt" value="{{addComment}}" type="text" bindinput="handleComment"/>
+    <view class="left btn" bindtap="handleSub">发表</view>
+  </view>
+</view>

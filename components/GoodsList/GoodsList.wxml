@@ -1,0 +1,17 @@
+<navigator url="/pages/detail/index?_id={{item._id}}" class="item_wrap">
+  <view class="userInfo">
+    <image class="head" src="{{item.avatarUrl}}" mode="widthFix"></image>
+    <view class="nick_name">
+      <view class="name_wrap">
+        <view class="name">{{item.nickName}}</view>
+        <view class="date">{{time}}</view>
+      </view>
+      <view catchtap="handleMore" class="iconfont icon-moreread"></view>
+    </view>
+  </view>
+  <view class="content">
+    <view class="title">{{item.title}}</view>
+    <view class="place">地点:{{item.place}}</view>
+    <image class="photo" catchtap="handleImg" wx:if="{{item.images}}" src="{{item.images[0]}}" mode="widthFix"></image>
+  </view>
+</navigator>

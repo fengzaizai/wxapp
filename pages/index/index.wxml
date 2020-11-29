@@ -1,0 +1,28 @@
+<view class="wrap">
+  <view class="top_wrap">
+    <navigator url="/pages/release/index" class="add">
+      <view class="iconfont icon-add-select"></view>
+    </navigator>
+    <view class="search_wrap">
+      <navigator url="/pages/search/index" class="search">
+        <view class="iconfont icon-search"></view>
+        <view class="ipt">点击搜索</view>
+      </navigator>
+    </view>
+    <view class="tab_bar">
+      <ul class="list">
+        <li class="item" wx:for="{{typeList}}" wx:key="index" data-index="{{index}}" bindtap="handleTab">
+          <view class="{{currentIndex===index?'active':''}}">{{item}}</view>
+        </li>
+      </ul>
+    </view>
+  </view>
+  <mp-actionSheet bindactiontap="btnClick" show="{{showActionsheet}}" actions="{{isMe?groupst:groupsf}}" title="选择您的操作。"></mp-actionSheet>
+  <view class="content">
+    <ul class="c_list">
+      <li class="c_item" wx:for="{{goodsList}}" wx:key="index">
+        <goods-list item="{{item}}" bindhandleMore="handleMore"></goods-list>
+      </li>
+    </ul>
+  </view>
+</view>

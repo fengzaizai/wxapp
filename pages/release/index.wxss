@@ -1,0 +1,58 @@
+.wrap {
+  width: 100%;
+  height: 100vh;
+  padding: 20rpx;
+  background-color: #e8e8e8;
+  color: #666;
+}
+.wrap .main {
+  width: 100%;
+  padding: 20rpx;
+  border-radius: 20rpx;
+  background-color: #fff;
+}
+.wrap .main .release_title {
+  color: #000;
+  font-size: 40rpx;
+  font-weight: 600;
+  margin: 30rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrap .main .list {
+  display: flex;
+  padding: 20rpx 0;
+}
+.wrap .main .list .title {
+  flex: 2;
+  text-align: center;
+}
+.wrap .main .list .ipt {
+  flex: 4;
+}
+.wrap .main .list .describe {
+  border: 2rpx solid #e8e8e8;
+  padding: 20rpx;
+  border-radius: 10rpx;
+  height: 200rpx;
+}
+.wrap .main .list .add_img_wrap {
+  width: 100%;
+  padding: 10rpx;
+  display: flex;
+  flex-wrap: wrap;
+}
+.wrap .main .list .add_img_wrap .add_img {
+  border-radius: 10rpx;
+  font-size: 50rpx;
+  width: 90rpx;
+  height: 90rpx;
+  background-color: #e8e8e8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrap button {
+  margin-top: 50rpx;
+}

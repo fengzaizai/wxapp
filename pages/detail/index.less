@@ -1,0 +1,133 @@
+.wrap {
+  width: 100%;
+  // height: 100vh;
+  background-color: #e8e8e8;
+  padding: 20rpx;
+  padding-bottom: 98rpx;
+
+  .main_wrap {
+    width: 100%;
+    // height: 100%;
+    background-color: #fff;
+    border-radius: 20rpx;
+    padding: 20rpx;
+
+    .content {
+      border-bottom: 2rpx solid #e8e8e8;
+
+      .content_top {
+        display: flex;
+
+        // height: 200rpx;
+        .top_left {
+          flex: 1;
+          border-radius: 50%;
+        }
+
+        .top_right {
+          flex: 5;
+          display: flex;
+          justify-content: space-between;
+          margin: 20rpx;
+
+          .name_time {
+            .nick {
+              color: var(--themeColor);
+            }
+
+            .time {
+              color: #666;
+              font-size: 22rpx;
+            }
+          }
+
+          .iconfont {
+            font-size: 40rpx;
+          }
+        }
+      }
+
+      .content_bottom {
+        .info {
+          color: #666;
+
+          .title {
+            font-size: 34rpx;
+            font-weight: 600;
+          }
+
+          .name {}
+
+          .place {
+            font-size: 30rpx;
+            font-weight: 600;
+          }
+
+          .type {}
+
+          .phone {}
+
+          .describe {}
+        }
+
+        .imgs {
+          .img {
+            width: 50%;
+          }
+        }
+      }
+    }
+    .comments_wrap{
+      .comments_title{
+        font-size: 50rpx;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.add_message {
+  height: 98rpx;
+  width: 100%;
+  background-color: rgb(238, 238, 238);
+  border-top: 2rpx solid #ccc;
+  position: fixed;
+  bottom: 0;
+  z-index: 9;
+  padding: 16rpx 20rpx;
+
+  .ipt_wrap {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 30rpx;
+    border: 2rpx solid #ccc;
+    display: flex;
+
+    .ipt {
+      flex: 2;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      padding-left: 10rpx;
+    }
+
+    .left {
+      flex: 1;
+      font-size: 30rpx;
+      color: #666;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 600;
+    }
+
+    .btn {
+      border-left: 2rpx solid #ccc;
+    }
+    .ipt_left{
+      border-right: 2rpx solid #ccc;
+    }
+  }
+}

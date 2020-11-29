@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "goods-list":"../../components/GoodsList/GoodsList",
+    "mp-actionSheet": "weui-miniprogram/actionsheet/actionsheet"
+  },
+  "enablePullDownRefresh":true,
+  "backgroundTextStyle":"dark"
+}

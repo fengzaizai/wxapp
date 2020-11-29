@@ -1,0 +1,41 @@
+<view class="wrap">
+  <view class="main">
+    <view class="release_title">{{types[typeIndex]}}</view>
+    <view class="list">
+      <view class="title">标题:</view>
+      <input type="text" class="ipt" value="{{title}}" bindblur="changeTitle" placeholder="请输入" />
+    </view>
+    <view class="list">
+      <view class="title">物品名:</view>
+      <input type="text" class="ipt" value="{{name}}" bindblur="changeName" placeholder="请输入" />
+    </view>
+    <view class="list">
+      <view class="title">选择类型:</view>
+      <picker class="ipt" bindchange="bindTypeChange" mode="selector" value="{{typeIndex}}" range="{{types}}">
+        <view class="picker">{{types[typeIndex]}}</view>
+      </picker>
+    </view>
+    <view class="list">
+      <view class="title">遗失/拾取地点:</view>
+      <input type="text" class="ipt" value="{{place}}" bindblur="changePlace" placeholder="请输入" />
+    </view>
+    <view class="list">
+      <view class="title">联系方式:</view>
+      <input type="text" class="ipt" value="{{phone}}" bindblur="changePhone" placeholder="请输入" />
+    </view>
+    <view class="list">
+      <view class="title">物品描述:</view>
+      <textarea class="ipt describe" name="" value="{{describe}}" bindblur="changeDescribe" id="" cols="30" rows="10" placeholder="请输入"></textarea>
+    </view>
+    <view class="list">
+      <view class="title">物品图片:</view>
+      <view class="ipt add_img_wrap">
+        <view class="add_img" bind:tap="handleAddImg">+</view>
+        <view class="up_img_item" wx:for="{{chooseImgs}}" wx:key="*this">
+          <Uplmg src="{{item}}" bindtap="handleRemoveImg" data-index="{{index}}"></Uplmg>
+        </view>
+      </view>
+    </view>
+  </view>
+  <button type="primary" bindtap="handleSub">发布</button>
+</view>

@@ -1,0 +1,34 @@
+.item_wrap {
+  background-color: #fff;
+  border-bottom: 2rpx solid #e8e8e8;
+  padding: 20rpx;
+  border-radius: 20rpx;
+}
+.item_wrap .userInfo {
+  display: flex;
+}
+.item_wrap .userInfo .head {
+  flex: 1;
+  height: 100rpx;
+  border-radius: 50%;
+}
+.item_wrap .userInfo .nick_name {
+  flex: 6;
+  padding: 10rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.item_wrap .userInfo .nick_name .date {
+  font-size: 20rpx;
+  color: #747474;
+}
+.item_wrap .userInfo .nick_name .iconfont {
+  color: #666;
+}
+.item_wrap .content .place {
+  font-size: 24rpx;
+  color: #747474;
+}
+.item_wrap .content .photo {
+  width: 260rpx;
+}

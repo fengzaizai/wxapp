@@ -1,0 +1,43 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/my/index",
+    "pages/release/index",
+    "pages/search/index",
+    "pages/detail/index",
+    "pages/login/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#0EB2FF",
+    "navigationBarTitleText": "失物招领",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#000",
+    "backgroundColor": "#fafafa",
+    "borderStyle": "black",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/icons/home.png",
+        "selectedIconPath": "/icons/home-fill.png"
+      },
+      {
+        "pagePath": "pages/my/index",
+        "text": "我的",
+        "iconPath": "/icons/bussiness-man.png",
+        "selectedIconPath": "/icons/bussiness-man-fill.png"
+      }  
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "useExtendedLib": {
+    "kbone": true,
+    "weui": true
+  }
+}

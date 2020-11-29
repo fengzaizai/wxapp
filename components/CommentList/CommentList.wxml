@@ -1,0 +1,12 @@
+<view class="comment_wrap">
+  <view class="comment_top">
+    <view class="top_left">
+      <image class="head" src="{{comment.avatarUrl}}" mode="widthFix"></image>
+    </view>
+    <view class="top_right">
+      <view class="nickName">{{comment.nickName}}</view>
+      <view class="content">{{comment.content}}</view>
+      <view class="bottom">{{'刚刚'}}</view>
+    </view>
+  </view>
+</view>

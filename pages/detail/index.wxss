@@ -1,0 +1,97 @@
+.wrap {
+  width: 100%;
+  background-color: #e8e8e8;
+  padding: 20rpx;
+  padding-bottom: 98rpx;
+}
+.wrap .main_wrap {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 20rpx;
+  padding: 20rpx;
+}
+.wrap .main_wrap .content {
+  border-bottom: 2rpx solid #e8e8e8;
+}
+.wrap .main_wrap .content .content_top {
+  display: flex;
+}
+.wrap .main_wrap .content .content_top .top_left {
+  flex: 1;
+  border-radius: 50%;
+}
+.wrap .main_wrap .content .content_top .top_right {
+  flex: 5;
+  display: flex;
+  justify-content: space-between;
+  margin: 20rpx;
+}
+.wrap .main_wrap .content .content_top .top_right .name_time .nick {
+  color: var(--themeColor);
+}
+.wrap .main_wrap .content .content_top .top_right .name_time .time {
+  color: #666;
+  font-size: 22rpx;
+}
+.wrap .main_wrap .content .content_top .top_right .iconfont {
+  font-size: 40rpx;
+}
+.wrap .main_wrap .content .content_bottom .info {
+  color: #666;
+}
+.wrap .main_wrap .content .content_bottom .info .title {
+  font-size: 34rpx;
+  font-weight: 600;
+}
+.wrap .main_wrap .content .content_bottom .info .place {
+  font-size: 30rpx;
+  font-weight: 600;
+}
+.wrap .main_wrap .content .content_bottom .imgs .img {
+  width: 50%;
+}
+.wrap .main_wrap .comments_wrap .comments_title {
+  font-size: 50rpx;
+  font-weight: 600;
+}
+.add_message {
+  height: 98rpx;
+  width: 100%;
+  background-color: #eeeeee;
+  border-top: 2rpx solid #ccc;
+  position: fixed;
+  bottom: 0;
+  z-index: 9;
+  padding: 16rpx 20rpx;
+}
+.add_message .ipt_wrap {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 30rpx;
+  border: 2rpx solid #ccc;
+  display: flex;
+}
+.add_message .ipt_wrap .ipt {
+  flex: 2;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 10rpx;
+}
+.add_message .ipt_wrap .left {
+  flex: 1;
+  font-size: 30rpx;
+  color: #666;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+}
+.add_message .ipt_wrap .btn {
+  border-left: 2rpx solid #ccc;
+}
+.add_message .ipt_wrap .ipt_left {
+  border-right: 2rpx solid #ccc;
+}
